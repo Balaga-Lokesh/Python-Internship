@@ -1,0 +1,86 @@
+body {
+    background: #f5f7fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #223;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em 2em 1em 2em;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+header h1 {
+    color: #1a6ed8;
+    margin-bottom: 0;
+}
+header h2 {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 0;
+    color: #3c3c3c;
+}
+.links a {
+    color: #1a6ed8;
+    text-decoration: none;
+    margin-right: 10px;
+}
+section h3 {
+    color: #1a6ed8;
+    margin-bottom: 10px;
+}
+.tech {
+    font-size: 90%;
+    font-style: italic;
+    color: #2b7ac2;
+    margin-bottom: 5px;
+    display: block;
+}
+.project-card {
+    background: #f0f6ff;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+.subtext {
+    font-size: 80%;
+    color: #555;
+}
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #555;
+}
+.message {
+    color: #278e27;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form label {
+    display: block;
+    margin-top: 10px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #1a6ed8;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form button {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #1a6ed8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+form button:hover {
+    background: #06478d;
+}

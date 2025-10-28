@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lokesh Balaga | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lokesh Balaga</h1>
+            <h2>Computer Science Student | Developer | AI Enthusiast</h2>
+            <div class="links">
+                <a href="mailto:lokesh.balaga03@gmail.com">Email</a> |
+                <a href="https://linkedin.com/in/Lokesh-Lucky" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+        <main>
+            <section class="about">
+                <h3>About Me</h3>
+                <p>B.Tech @ IIIT Kottayam | Solving real-world problems with software and AI.</p>
+                <p>Skills in Python, Java, C, React, Django, REST APIs, MySQL, TensorFlow, Docker, OpenCV, Git, and more.</p>
+            </section>
+            <section class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li><b>Languages:</b> Python, Java, C</li>
+                    <li><b>Web:</b> React, Django, HTML, CSS, JS, REST API, MySQL</li>
+                    <li><b>AI/ML:</b> TensorFlow, OpenCV, MediaPipe</li>
+                    <li><b>Tools:</b> Docker, Git, Tkinter</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h3>Featured Projects</h3>
+                {% for proj in projects %}
+                    <div class="project-card">
+                        <h4>{{ proj.title }}</h4>
+                        <span class="tech">{{ proj.tech }}</span>
+                        <ul>
+                            {% for line in proj.desc %}
+                                <li>{{ line }}</li>
+                            {% endfor %}
+                        </ul>
+                        <a href="/project/{{ loop.index0 }}">More Details</a>
+                    </div>
+                {% endfor %}
+            </section>
+            <section class="edu-exp">
+                <h3>Education</h3>
+                <ul>
+                    <li>B.Tech in Computer Science & Engineering, IIIT Kottayam <br>
+                        <span class="subtext">Aug. 2023 - Apr. 2027</span></li>
+                </ul>
+                <h3>Experience</h3>
+                <ul>
+                    <li>Research Intern (NIT Trichy) – Facial Emotion Recognition <span class="subtext">May 2025 - Jun. 2025</span></li>
+                </ul>
+                <h3>Leadership & Extracurricular</h3>
+                <ul>
+                    <li>Manga Club, IIIT Kottayam</li>
+                    <li>Event Management, SPELL Conference</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <a href="/contact">Contact Me</a>
+            <p>&copy; 2025 Lokesh Balaga</p>
+        </footer>
+    </div>
+</body>
+</html>
